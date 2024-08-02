@@ -17,4 +17,4 @@ phases:
       - echo "In the post_build phase..."
 cache:
   paths:
-    - 'node_modules/**/*' 
+    - 'DemoProd/node_modules/**/*' 
