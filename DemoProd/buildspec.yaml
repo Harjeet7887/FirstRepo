@@ -17,3 +17,7 @@ phases:
 cache:
   paths:
     - 'DemoProd/node_modules/**/*' 
+    - 'DemoProd/controllers/**/*'
+    - 'DemoProd/middlewares/**/*'
+    - 'DemoProd/routes/**/*'
+
