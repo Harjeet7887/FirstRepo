@@ -44,7 +44,7 @@ function increaseCPUUtilization(durationInSeconds) {
 }
 
 // Example usage: Increase CPU utilization for 30 seconds
-increaseCPUUtilization(30);
+// increaseCPUUtilization(30);
 
 
 app.get("/", (req, res) => {
