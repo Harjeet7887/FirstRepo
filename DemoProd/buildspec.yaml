@@ -17,4 +17,3 @@ phases:
 cache:
   paths:
     - 'DemoProd/node_modules/**/*' 
-    - 'DemoProd/package-lock.json'
