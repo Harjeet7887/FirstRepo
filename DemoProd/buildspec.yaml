@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - echo "In the pre_build phase..."
+      - ls -l DemoProd/node_modules || echo "No cache restored"
   build:
     commands:
       - echo "In the build phase..."
