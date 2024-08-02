@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo "In the pre_build phase..."
+  build:
+    commands:
+      - echo "In the build phase..."
+      - echo "Installing dependencies..."
+      - npm install
+      - npm install chalk
+      - npm install lodash
+      - echo "Installing dependencies done!"
+  post_build:
+    commands:
+      - echo "In the post_build phase..."
+cache:
+  paths:
+    - 'node_modules/**/*' 
