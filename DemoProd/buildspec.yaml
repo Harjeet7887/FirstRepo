@@ -1,5 +1,8 @@
 version: 0.2
 phases:
+  install:
+      runtime-versions:
+        nodejs: 20 # specify the Node.js runtime version
   pre_build:
     commands:
       - echo "In the pre_build phase..."
@@ -9,9 +12,7 @@ phases:
       - echo "In the build phase..."
       - cd DemoProd/
       - echo "Installing dependencies..."
-      - npm install
-      - npm install chalk
-      - npm install lodash
+      - npm ci
       - echo "Installing dependencies done!"
   post_build:
     commands:
@@ -19,3 +20,4 @@ phases:
 cache:
   paths:
     - 'DemoProd/node_modules/**/*' 
+    - 'DemoProd/package-lock.json'
