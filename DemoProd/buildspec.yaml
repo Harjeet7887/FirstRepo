@@ -10,7 +10,7 @@ phases:
       - cd DemoProd/
       - echo "Installing dependencies..."
       - npm ci
-      - echo "Installing dependencies done!
+      - echo "Installing dependencies done!"
   post_build:
     commands:
       - echo "In the post_build phase..."
