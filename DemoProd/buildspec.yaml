@@ -10,15 +10,13 @@ phases:
       - cd DemoProd/
       - echo "Installing dependencies..."
       - npm ci
-      - echo "Installing dependencies done!"
-  php-test:
-    commands:
-      - echo "In the php-test phase..." 
-      - php -v
-      - composer -v
+      - echo "Installing dependencies done!
   post_build:
     commands:
       - echo "In the post_build phase..."
+      - echo "In the php-test phase..."
+      - php -v
+      - composer -v
 cache:
   paths:
     - DemoProd/node_modules/**/*
