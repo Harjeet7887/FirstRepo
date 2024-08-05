@@ -71,7 +71,7 @@ app.get("/metrics", async(req, res) => {
 });
 
 app.get("/data", rateLimit, (req, res) => {
-  res.json(data);
+  res.status(200).json(data);
 });
 
 app.listen(PORT, () => {
